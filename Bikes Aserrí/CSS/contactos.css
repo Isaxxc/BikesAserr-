@@ -1,0 +1,87 @@
+/* Estilos para la sección de Contactos */
+#contact-us {
+   padding: 50px 20px;
+   background-color: #000000;
+ }
+ 
+ .contact-container {
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ h1 {
+   text-align: center;
+   font-size: 2.5rem;
+   color: #494949;
+   margin-bottom: 30px;
+ }
+ 
+ /* Contenido de contacto: info y formulario */
+ .contact-content {
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+   margin-bottom: 50px;
+ }
+ 
+ /* Información de contacto */
+ .contact-info {
+   flex: 1;
+ }
+ 
+ .contact-info ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .contact-info li {
+   font-size: 1.2rem;
+   margin-bottom: 15px;
+ }
+ 
+ .contact-info li i {
+   margin-right: 10px;
+   color: #000000;
+ }
+ 
+ .contact-info a {
+   color: #000000;
+   text-decoration: none;
+ }
+ 
+ .contact-info a:hover {
+   text-decoration: underline;
+ }
+ 
+ /* Formulario de contacto */
+ .contact-form {
+   flex: 1;
+ }
+ 
+ .contact-form .form-group {
+   margin-bottom: 20px;
+ }
+ 
+ .contact-form input,
+ .contact-form textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+ }
+ 
+ .contact-form button {
+   background-color: #464646;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1.1rem;
+ }
+ 
+ .contact-form button:hover {
+   background-color: #b3b3b3;
+ }
+ 

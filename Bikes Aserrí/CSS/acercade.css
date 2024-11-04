@@ -1,0 +1,82 @@
+/* Estilos para la sección Acerca de Nosotros */
+#about-us {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+ }
+ 
+ .about-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+ }
+ 
+ h1 {
+   font-size: 2.5rem;
+   margin-bottom: 30px;
+   color: #333;
+ }
+ 
+ .about-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+ }
+ 
+ /* Texto descriptivo */
+ .about-text {
+   flex: 1;
+   padding: 20px;
+   text-align: justify;
+ }
+ 
+ .about-text h2 {
+   font-size: 2rem;
+   color: #120436;
+ }
+ 
+ .about-text p {
+   font-size: 1.1rem;
+   line-height: 1.8;
+   color: #555;
+   margin-bottom: 15px;
+ }
+ 
+ /* Imagen */
+ .about-image {
+   flex: 1;
+   padding: 20px;
+ }
+ 
+ .about-image img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Responsividad */
+ @media (max-width: 900px) {
+   .about-content {
+     flex-direction: column;
+   }
+ 
+   .about-text,
+   .about-image {
+     padding: 10px;
+   }
+ }
+ 
+ @media (max-width: 600px) {
+   h1 {
+     font-size: 2rem;
+   }
+ 
+   .about-text p {
+     font-size: 1rem;
+   }
+ }
+ 
