@@ -1,0 +1,76 @@
+/* Estilos generales */
+#product-list {
+   margin: 20px auto;
+   padding: 0;
+   padding-bottom: 10px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 20px;
+ }
+ 
+ .product-item {
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   text-align: center;
+   transition: transform 0.2s;
+ }
+ 
+ .product-item:hover {
+   transform: translateY(-5px); 
+ }
+ 
+ .product-item img {
+   width: 100%;
+   height: 50%;
+   border-radius: 8px;
+   margin-bottom: 10px;
+ }
+ 
+ .product-item h3 {
+   font-size: 1.2rem;
+   color: #333;
+ }
+ 
+ .product-item p {
+   font-size: 1rem;
+   color: #666;
+   margin: 5px 0;
+ }
+ 
+ .product-item button {
+   padding: 8px 12px;
+   background-color: #28a745;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.2s;
+ }
+ 
+ .product-item button:hover {
+   background-color: #218838;
+ }
+ 
+ /* Para hacer responsive las tarjetas */
+ @media (max-width: 600px) {
+   #product-list {
+     grid-template-columns: 1fr; 
+   }
+   .product-item img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+ }
+
+ /* Media query para tablets y pantallas medianas (600px - 900px) */
+@media (max-width: 900px) {
+   #product-list {
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+   }
+
+ }
